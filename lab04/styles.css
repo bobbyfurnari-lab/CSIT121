@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('sports-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+header, nav, main {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: rgba(255, 204, 0, 0.2);
+}
+
+nav a.current {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+nav a:focus {
+    outline: 2px solid #ffcc00;
+    outline-offset: 2px;
+}
