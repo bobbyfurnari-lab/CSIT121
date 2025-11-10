@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GIF Gear - Pro Sports Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+    <h1>GIF Gear</h1>
+    <p>Explore GIF images of pro sports gear.</p>
+</header>
+
+<div class="navbar" id="myNavbar">
+    <a href="index.html">Home</a>
+    <a href="jpg.html">JPEG Gear</a>
+    <a href="png.html">PNG Gear</a>
+    <a href="gif.html" class="current">GIF Gear</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+</div>
+
+<main>
+    <section>
+        <h2>Basketball Animation (GIF)</h2>
+        <img src="basketball.gif" alt="Basketball GIF" style="max-width:100%;border-radius:10px;">
+        <p>Animated GIF showcasing a pro basketball player in action.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Bobby Furnari - CSIT 121</p>
+</footer>
+
+<script>
+function toggleMenu() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
+</script>
+
+</body>
+</html>
