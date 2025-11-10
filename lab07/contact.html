@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jujutsu Kaisen Tierlist Contact Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Us About the Tier List</h1>
+    <nav>
+      <a href="tierlist.html">Tier List</a> |
+      <a href="contact.html">Contact Form</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Submit Your Feedback</h2>
+      <form action="#" method="post">
+    
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        
+        <label for="favorite">Who is your favorite Jujutsu Kaisen character?</label>
+        <select id="favorite" name="favorite">
+          <option value="">--Choose One--</option>
+          <option value="gojo">Satoru Gojo</option>
+          <option value="yuji">Yuji Itadori</option>
+          <option value="megumi">Megumi Fushiguro</option>
+          <option value="nobara">Nobara Kugisaki</option>
+          <option value="junpei">Junpei Yoshino</option>
+        </select>
+
+        
+        <p>Do you agree with the current tier list ranking?</p>
+        <label><input type="radio" name="agree" value="yes"> Yes</label>
+        <label><input type="radio" name="agree" value="no"> No</label>
+
+        
+        <label for="higher">Which characters would you rank higher?</label>
+        <textarea id="higher" name="higher" rows="4"></textarea>
+
+        
+        <p>Which abilities do you find most interesting? (Select all that apply)</p>
+        <label><input type="checkbox" name="abilities" value="Limitless"> Limitless</label>
+        <label><input type="checkbox" name="abilities" value="Divergent Fist"> Divergent Fist</label>
+        <label><input type="checkbox" name="abilities" value="Ten Shadows"> Ten Shadows Shikigami</label>
+        <label><input type="checkbox" name="abilities" value="Straw Doll"> Straw Doll</label>
+        <label><input type="checkbox" name="abilities" value="Poison Shikigami"> Poison Shikigami</label>
+
+        
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Bobby Furnari | CSIT121 | Lab 07</p>
+  </footer>
+</body>
+</html>
