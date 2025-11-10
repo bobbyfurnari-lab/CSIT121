@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pro Sports Gear Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+    <h1>Pro Sports Gear Gallery</h1>
+    <p>This gallery showcases essential gear used by pro athletes. 
+    You can explore this gear through three different web image formats: JPEG, PNG, and GIF.</p>
+</header>
+
+<!-- Responsive Navbar -->
+<div class="navbar" id="myNavbar">
+    <a href="index.html" class="current">Home</a>
+    <a href="jpg.html">JPEG Gear</a>
+    <a href="png.html">PNG Gear</a>
+    <a href="gif.html">GIF Gear</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+</div>
+
+<main>
+    <section>
+        <h2>Welcome to the Pro Sports Gear Gallery</h2>
+        <p>This website highlights common web image formats using sports gear as the central theme. 
+        Here you will find information about a basketball GIF, a lacrosse stick PNG, and a pro football player JPG.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Bobby Furnari - CSIT 121</p>
+</footer>
+
+<script>
+function toggleMenu() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
+</script>
+
+</body>
+</html>

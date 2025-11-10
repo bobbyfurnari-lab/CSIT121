@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PNG Gear - Pro Sports Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+    <h1>PNG Gear</h1>
+    <p>Explore PNG images of pro sports gear.</p>
+</header>
+
+<div class="navbar" id="myNavbar">
+    <a href="index.html">Home</a>
+    <a href="jpg.html">JPEG Gear</a>
+    <a href="png.html" class="current">PNG Gear</a>
+    <a href="gif.html">GIF Gear</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+</div>
+
+<main>
+    <section>
+        <h2>Lacrosse Stick (PNG)</h2>
+        <img src="lacrosse.png" alt="Lacrosse stick" style="max-width:100%;border-radius:10px;">
+        <p>Transparent PNG image showing lacrosse gear for pro athletes.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Bobby Furnari - CSIT 121</p>
+</footer>
+
+<script>
+function toggleMenu() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
+</script>
+
+</body>
+</html>
