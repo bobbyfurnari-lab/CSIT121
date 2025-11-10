@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GIF Example - Pro Sports Gear Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <header>
+        <h1>Pro Sports Gear Gallery</h1>
+    </header>
+
+    <nav class="navbar" id="myNavbar">
+        <a href="index.html">Home</a>
+        <a href="jpg.html">JPG Example</a>
+        <a href="png.html">PNG Example</a>
+        <a href="gif.html" class="current">GIF Example</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">&#9776;</a>
+    </nav>
+
+    <main>
+        <h2>GIF Format Example</h2>
+
+        <img src="images/basketball-bounce.gif" 
+             alt="Animated basketball dribbling" width="300" />
+
+        <section>
+            <h3>About This Image</h3>
+            <p>This GIF shows a basketball bouncing continuously, representing motion and energy.
+               The looping animation captures the dynamic movement of the ball — something a still image can’t fully convey.</p>
+        </section>
+
+        <section>
+            <h3>Why GIF Format?</h3>
+            <p>The GIF format is perfect for short animations like this because it supports looping motion without needing a video player.
+               It also works well for simple graphics with limited colors, making it a good choice for web-friendly motion visuals.</p>
+        </section>
+
+        <div>
+            <p>Image source: <a href="https://giphy.com/gifs/SportsManias-sports-emoji-sportsmanias-GGjE4LAJ2uzGiwdk55" target="_blank" rel="noopener noreferrer">GIPHY – Basketball Animation</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bobby Furnari - CSIT 121</p>
+    </footer>
+
+    <script>
+        function toggleNavbar() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+</html>

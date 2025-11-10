@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PNG Example - Pro Sports Gear Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <header>
+        <h1>Pro Sports Gear Gallery</h1>
+    </header>
+
+    <nav class="navbar" id="myNavbar">
+        <a href="index.html">Home</a>
+        <a href="jpg.html">JPG Example</a>
+        <a href="png.html" class="current">PNG Example</a>
+        <a href="gif.html">GIF Example</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">&#9776;</a>
+    </nav>
+    
+    <main>
+        <h2>PNG Format Example</h2>
+        
+        <img src="images/lacrosse-sticks.png" 
+             alt="A graphic icon of two lacrosse sticks with a transparent background" width="300" />
+        
+        <section>
+            <h3>About This Image</h3>
+            <p>This image is a clean graphic of two lacrosse sticks. Its strong lines and transparent background 
+               make it great for use in sports designs, team graphics, or as part of a gear showcase.</p>
+        </section>
+        
+        <section>
+            <h3>Why PNG Format?</h3>
+            <p>PNG format is ideal here because it supports transparency and keeps the edges of the graphic looking sharp. 
+               It also avoids quality loss, which makes it perfect for displaying logos or icons like this one on any background color.</p>
+        </section>
+        
+        <div>
+            <p>Image source: 
+                <a href="https://www.pngmart.com/image/36664" target="_blank" rel="noopener noreferrer">
+                PNGMart – Lacrosse Sticks PNG</a>
+            </p>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Bobby Furnari - CSIT 121</p>
+    </footer>
+
+    <script>
+        function toggleNavbar() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+</html>
