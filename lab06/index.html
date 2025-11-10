@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Usability Evaluation - USA Rugby</title>
+
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f9fafc;
+      color: #222;
+      margin: 2rem auto;
+      max-width: 900px;
+      line-height: 1.5;
+    }
+    header, footer {
+      text-align: center;
+      background-color: #002244;
+      color: white;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    h1, h2 {
+      color: #990000;
+    }
+    a {
+      color: #0056b3;
+    }
+    main {
+      margin-top: 2rem;
+    }
+    section {
+      margin-bottom: 2.5rem;
+      padding: 1rem;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+    img {
+      display: block;
+      margin: 1rem auto;
+      max-width: 100%;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    figcaption {
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>UI/UX Evaluation</h1>
+    <p>CSIT121 | Lab 06 | Bobby Furnari</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Website Overview</h2>
+      <p><strong>URL:</strong> <a href="https://usa.rugby/" target="_blank" rel="noopener">https://usa.rugby/</a></p>
+      <p><strong>Name:</strong> USA Rugby</p>
+      <p><strong>Target Audience:</strong> Rugby players, coaches, officials, and fans interested in the team.</p>
+    </section>
+
+    <section>
+      <h2>Site Organization</h2>
+      <p>The USA Rugby website has been organized into five different sections with a navigation bar at the top: <em>About, News, Membership, Donate, and Teams</em>. 
+      Each section has a dropdown for different subpages that include specific information about that section. The homepage follows hierarchical organization, 
+      offering information about current events, featured articles, and quick links to core programs. The footer provides contact information, social links, and site-wide navigation.</p>
+    </section>
+
+    <section>
+  <h2>Website Screenshot</h2>
+  <figure>
+    <img src="Website-Screenshot.png" alt="Screenshot of the USA Rugby homepage showing the top navigation bar with About, News, Membership, Donate, and Teams sections." />
+    <figcaption>Screenshot of the USA Rugby homepage with navigation and featured content.</figcaption>
+  </figure>
+</section>
+
+    <section>
+      <h2>CRAP Design Principle</h2>
+      <p>The USA Rugby website demonstrates the CRAP principle of <strong>Alignment</strong>. The site uses consistent alignment across all pages, with content centered under clear section headings. 
+      For example, text and images are aligned along a central column, creating a structured and professional appearance.</p>
+    </section>
+
+    <section>
+      <h2>Accessibility Audit</h2>
+      <p><strong>Accessibility Score:</strong> 53/100</p>
+      <p>The site passed over 40 audits and includes proper heading hierarchy, alt text on most images, and sufficient color contrast. 
+      However, there were 11 critical errors that mainly dealt with accessibility for users with low vision or who use assistive technology.</p>
+    </section>
+
+    <section>
+      <h2>Effectiveness, Efficiency, and Engagement</h2>
+      <ul>
+        <li><strong>Effectiveness:</strong> The site provides rugby-related resources, including news, match updates, and player pathways. Users can quickly find national team information or membership details, supporting accurate completion of typical tasks.</li>
+        <li><strong>Efficiency:</strong> The main navigation bar and consistent design make the site efficient to use. Users can locate major sections within one or two clicks, and search and menu options are visible and intuitive.</li>
+        <li><strong>Engagement:</strong> The site is visually appealing, using strong national colors (red, white, and blue) and high-quality images of players and teams. It reflects the passion and energy of rugby while maintaining a professional tone appropriate for a national organization.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Recommendations</h2>
+      <p>Improve keyboard and screen reader accessibility for the navigation bar and dropdown menus. Users who rely on the keyboard for navigation currently cannot access subpages through the dropdown menus. 
+      Adding proper focus states, ARIA roles, and keyboard navigation support would enhance accessibility and overall user experience.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Bobby Furnari | All rights reserved</p>
+  </footer>
+</body>
+</html>
