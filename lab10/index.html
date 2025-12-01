@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KeyboardEvent.code – What Is It?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>UI Events: KeyboardEvent.code Values</h1>
+    <p class="tagline">What is KeyboardEvent.code?</p>
+  </header>
+
+  <nav aria-label="Main site navigation">
+    <ul>
+      <li><a href="index.html">What is it?</a></li>
+      <li><a href="importance.html">Why is it important?</a></li>
+      <li><a href="usage.html">How is it used?</a></li>
+      <li><a href="sources.html">Sources</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>What Is KeyboardEvent.code?</h2>
+        <p>
+        KeyboardEvent.code is a code attribute that uses the physical button location on a keyboard. It is ran through keyboard events like keyup and keydown,
+        which then scripts can use for when a user presses a key. Coming from the official W3C code list, the values are formatted as strings such as "Space" or "Enter".
+        It tracks the physical key itself and keeps it consistent across all types of browsers and devices.
+        </p>
+
+        <p>
+        KeyboardEvent.code defines and slipts the keyboard into sections and rows so each group of key has its own naming pattern. Regular lettered keys start with "Key" followed by a letter,
+        the top row of the keyboard starts with "Digit" followed by a number, and arrow controls return names such as "ArrowUp". What is to note is that names describe the acutal buttons position
+        on a keyboard. Describing the letter or symbol shown when typed is a different property labeled KeyboardEvent.key.
+        </p>
+
+        <p>
+        The standard provided by W3C allows for an official list of names for physical keyboard shortcuts. The standard provides one shared set of identifiers everyone can use. It also includes
+        codes for all types of keys that are always written as strings. Overall, it keeps keyboard input organized and universal for both developers and users.
+        </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 | Bobby Furnari | CSIT Lab 10</p>
+  </footer>
+</body>
+</html>

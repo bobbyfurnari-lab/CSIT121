@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KeyboardEvent.code – Why Is It Important?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>UI Events: KeyboardEvent.code Values</h1>
+    <p class="tagline">Why KeyboardEvent.code is important</p>
+  </header>
+
+  <nav aria-label="Main site navigation">
+    <ul>
+      <li><a href="index.html">What is it?</a></li>
+      <li><a href="importance.html">Why is it important?</a></li>
+      <li><a href="usage.html">How is it used?</a></li>
+      <li><a href="sources.html">Sources</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Why Is KeyboardEvent.code Important?</h2>
+
+      <p>
+        It is important for consistency across keyboards as many people use different keyboard layouts. KeyboardEvent.code allows for the standardization
+        across these different keyboards such as QWERTY or AZERTY keyboards. Due to the physical position of the key being tied to the code value the same
+        key means the same code. Without this standardization, different browsers could call the same physical key somthing different.
+      </p>
+
+      <p>
+        This standard also applys for accessibility, as almost all users depend on clear controls when operating a keyboard. Some users could only be using a keyboard
+        to navigate a website, esecially people with certian disabilites. KeyboardEvent.code allows for the creation of these reliable and clear keyboard controls that
+        we have been using. When keyboard input is predicatable it becomes much easier to understand.
+      </p>
+
+      <p>
+        For developers, having a standard list of codes makes writing much simpler. Before there was a standard, properties behaved differently between browers.
+        Now, code is easier to read and keep intact when working on projects. Code is also easier and faster to share when working on a team. Overall, it allows for less
+        time to be spent on keyboard errors and more time be spent on work.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 | Bobby Furnari | CSIT Lab 10</p>
+  </footer>
+</body>
+</html>

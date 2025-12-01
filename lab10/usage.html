@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KeyboardEvent.code – How It’s Used</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>KeyboardEvent.code</h1>
+  <p class="tagline">How this standard is used in the browser</p>
+</header>
+
+<nav aria-label="Main site navigation">
+  <ul>
+    <li><a href="index.html">What it is</a></li>
+    <li><a href="importance.html">Why it matters</a></li>
+    <li><a href="usage.html">How it’s used</a></li>
+    <li><a href="sources.html">Sources</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section>
+    <h2>How is KeyboardEvent.code used?</h2>
+
+    <p>
+      KeyboardEvent.code is accessed through JavaScript keyboard event listeners within a browser. The browser automatically creates a KeyboardEvent 
+      object every time a key is pressed, which is where the code property comes from. The code value returns standardized string labels for physical keys, 
+      like "KeyA", "Enter", or "Space". These values stay the same even when the user switches keyboard language or layout, making them dependable. 
+      This is why developers use event.code when they care about the real key pressed, not the symbol it types.
+    </p>
+
+    <p>
+      One of the main uses for KeyboardEvent.code is building keyboard controls in browser games and shortcuts. Keys like WASD and arrow buttons are detected
+      based on their physical position. It is also used for keyboard shortcuts such as "Alt + Tab". It will work on any keyboard due to the physical location of the key.
+    </p>
+
+    <p>
+      KeyboardEvent.code is best when websites need to know the physical key pressed instead of what letter it types. Since the codes stay the same across keyboard layouts and languages, 
+      developers use it to avoid broken controls or shortcuts. Overall, it keeps keyboard logic more reliable and easier to test in the browser.
+    </p>
+
+<pre><code>document.addEventListener("keydown", (event) =&gt; {
+  console.log(event.code);
+});</code></pre>
+
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 | Bobby Furnari | CSIT Lab 10</p>
+</footer>
+
+</body>
+</html>
